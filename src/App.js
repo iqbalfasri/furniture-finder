@@ -8,6 +8,8 @@ function App() {
   const [products, setProducts] = useState([]);
   const [style, setStyle] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState("");
+  const [filteredProduct, setFilteredProduct] = useState([]);
 
   useEffect(() => {
     async function getFurniture() {
@@ -23,18 +25,36 @@ function App() {
     getFurniture();
   }, []);
 
+  const prodcutNotNull = products.length !== 0 ? products : [];
+
+  const filterWithKeyword = prodcutNotNull.filter(product => {
+    return product.name.toLowerCase().indexOf(search) !== -1;
+  });
+
+  // setFilteredProduct(filteredProduct);
+  // console.log(filteredProduct, "Filter")
+
   return (
     <>
       <header className="header">
         <div className="container">
-          <h1>furniture_styles</h1>
+          <form onSubmit={e => {
+
+          }}>
+            <input
+              className="header--search"
+              type="text"
+              placeholder="Cari Furniture"
+              onChange={e => setSearch(e.target.value)}
+            />
+          </form>
         </div>
       </header>
 
       <main className="list--products">
         <div className="container">
           <div className="row">
-            <Card products={products} />
+            <Card products={filterWithKeyword} />
           </div>
         </div>
       </main>

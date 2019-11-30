@@ -13,8 +13,15 @@
   color: #8e8e8e;;
 }
 .product--card-style p {
-  padding: 0; margin: 0;;
+  padding: 0; margin: 0;
+  color: #5595d7;
 }
 .product--card-delivery p {
   text-align: right;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2779cd;;
+}
+.product--card-price p {
+  color: #ff9f21;;
 }

@@ -18,6 +18,12 @@ body {
   min-height: 250px;
   background-color: #007bff;
 }
+.header--search {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;;
+}
 
 /* products */
 .list--products {
