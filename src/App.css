@@ -23,23 +23,3 @@ body {
 .list--products {
   padding: 40px 0;
 }
-.product--card {
-  background-color: #fff;
-  margin: 15px auto;
-  padding: 35px 40px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
-.product--card h4 {
-  font-weight: bold;
-}
-.product--card .product--card-description p {
-  color: #8e8e8e;;
-}
-.product--card-style p {
-  padding: 0; margin: 0;;
-}
-.product--card-delivery p {
-  text-align: right;
-}
