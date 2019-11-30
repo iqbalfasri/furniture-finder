@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     async function getFurniture() {
       let response = await fetch(
-        "http://www.mocky.io/v2/5c9105cb330000112b649af8"
+        "https://www.mocky.io/v2/5c9105cb330000112b649af8"
       );
       let responseJson = await response.json();
 
