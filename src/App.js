@@ -7,9 +7,7 @@ import "./App.css";
 function App() {
   const [products, setProducts] = useState([]);
   const [style, setStyle] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
-  const [filteredProduct, setFilteredProduct] = useState([]);
 
   useEffect(() => {
     async function getFurniture() {
