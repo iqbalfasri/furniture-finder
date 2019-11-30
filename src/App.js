@@ -31,16 +31,11 @@ function App() {
     return product.name.toLowerCase().indexOf(search) !== -1;
   });
 
-  // setFilteredProduct(filteredProduct);
-  // console.log(filteredProduct, "Filter")
-
   return (
     <>
       <header className="header">
         <div className="container">
-          <form onSubmit={e => {
-
-          }}>
+          <form>
             <input
               className="header--search"
               type="text"

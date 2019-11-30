@@ -16,9 +16,13 @@ body {
 .header {
   width: 100%;
   min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #007bff;
 }
 .header--search {
+  width: 40%;;
   padding: 10px 15px;
   border-radius: 10px;
   border: none;
